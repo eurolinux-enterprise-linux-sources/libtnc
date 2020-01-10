@@ -1,0 +1,9 @@
+# Example TNC config file
+# Used by the test_dynamic test suite, but only
+# on Cygwin platforms, where the names of loadable libraries
+# is different to Linux and Unix
+# It includes files for testing both IMC and IMV
+#  $Id: $
+
+IMC "OSC IMC" .libs/cygosc_imc-0.dll
+IMV "OSC IMV" .libs/cygosc_imv-0.dll

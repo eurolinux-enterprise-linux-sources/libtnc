@@ -1,0 +1,31 @@
+// osc.h
+//
+// Definitions of things required by both the IMC and IMV
+// Message types this module understands
+// TODO: is a process running?
+
+#ifndef _LIBOSC_H
+#define _LIBOSC_H
+
+// Open System Consultants: DO NOT USE THIS FOR YOUR OWN MODULES!!
+#define VENDORID 9048
+
+// Message type numbers
+#define OSC_MESSAGE_OS_DETAILS             TNCMESSAGENUM(VENDORID, 1)
+#define OSC_MESSAGE_PACKAGE_STATUS_REQUEST TNCMESSAGENUM(VENDORID, 2)
+#define OSC_MESSAGE_PACKAGE_STATUS_REPLY   TNCMESSAGENUM(VENDORID, 3)
+#define OSC_MESSAGE_USER_MESSAGE           TNCMESSAGENUM(VENDORID, 4)
+#define OSC_MESSAGE_FILE_STATUS_REQUEST    TNCMESSAGENUM(VENDORID, 5)
+#define OSC_MESSAGE_FILE_STATUS_REPLY      TNCMESSAGENUM(VENDORID, 6)
+#define OSC_MESSAGE_REGISTRY_REQUEST       TNCMESSAGENUM(VENDORID, 7)
+#define OSC_MESSAGE_REGISTRY_REPLY         TNCMESSAGENUM(VENDORID, 8)
+#define OSC_MESSAGE_EXTCOMMAND_REQUEST     TNCMESSAGENUM(VENDORID, 9)
+#define OSC_MESSAGE_EXTCOMMAND_REPLY       TNCMESSAGENUM(VENDORID, 10)
+
+// The name of the environment variable that can be used to 
+// adjust the name of the policy file
+#define ENV_IMV_POLICY_FILE "OSC_IMV_POLICY_FILE"
+
+#define MAX_MESSAGE_LEN 1000
+
+#endif

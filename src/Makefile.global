@@ -1,0 +1,11 @@
+# Makefile.global
+# for libtnc
+# $Id: Makefile.global,v 1.5 2006/04/11 04:59:07 mikem Exp mikem $
+
+# Help for managing RCS
+ci:
+	ci -Nv`echo $(VERSION)|tr . _` -l $(DIST_COMMON)
+	for subdir in $(SUBDIRS); do \
+	echo "Making ci in $$subdir"; \
+	(cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) ci) \
+	done

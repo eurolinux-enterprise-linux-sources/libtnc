@@ -1,0 +1,7 @@
+# Example TNC config file
+# Used by the test_dynamic test suite
+# It includes files for testing both IMC and IMV
+#  $Id: $
+
+IMC "test IMC" ../../src/sample/.libs/libsample_imc.so
+IMV "test IMV" ../../src/sample/.libs/libsample_imv.so

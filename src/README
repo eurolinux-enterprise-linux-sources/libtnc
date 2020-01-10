@@ -1,0 +1,13 @@
+This library provides functions for loading and interfacing with loadable IMC
+and IMV modules as required by the TNC IF-IMC and IF-IMV interfaces as
+described in:
+
+https://www.trustedcomputinggroup.org/specs/TNC
+
+Supports:
+	IF-IMC 1.1
+	IF-IMV 1.1
+	IF-TNCCS 1.0
+
+Author: Mike McCauley (mikem@open.com.au)
+Copyright (C) 2006 Mike McCauley

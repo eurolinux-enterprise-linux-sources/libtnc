@@ -1,0 +1,9 @@
+if (System.name('') eq 'Linux')
+{
+    if (File.status('/etc/inittab') == '0')
+    {
+	recommend ISOLATE
+	log DEBUG 'got it'
+	usermessage 'testing'
+    }
+}

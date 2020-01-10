@@ -1,0 +1,37 @@
+rebuild config:
+autoreconf
+
+make dist
+make distcheck (actually gets some errors)
+
+Adjust version in configure.in
+
+make clean
+./configure --with-dmalloc
+make
+make check
+cd src/libtnc
+DMALLOC_OPTIONS=log-trans,log-stats,log=logfile ./test_dynamic
+DMALLOC_OPTIONS=log-non-free,check-heap,inter=100,log=logfile  ./test_tncc
+test_static does no mallocs, will not make a logfile
+
+
+https://sourceforge.net/projects/libtnc/develop
+Admin->File Manager
+create new folder with right click
+open new folder
+Upload File
+to add new news item:
+Develop->News submit
+
+Old instructions:
+http://sourceforge.net/projects/libtnc/
+ftp upload.sourceforge.net 
+anonymous
+mikem@open.com.au
+cd incoming
+put libtnc-1.19.tar.gz
+
+http://sourceforge.net/my/ -> libtnc -> Admin -> File REleases -> Add Release
+http://sourceforge.net/project/admin/editpackages.php?group_id=168708
+mikemccauley fred01fred

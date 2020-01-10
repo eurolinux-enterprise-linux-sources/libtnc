@@ -1,0 +1,33 @@
+Installation Instructions for Windows
+*************************************
+
+This file describes how to build libtnc native DLLs for Windows on Windows
+
+Prerequisites:
+
+1. Microsoft Windows PC (XP etc)
+2. Microsoft Visual C++ 2005 Express Edition (with Service pack 1), available
+   for free from http://msdn.microsoft.com
+3. Microsoft Platform SDK (make sure you follow the instructions on the download
+   page about adding the appropriate paths to the Projects and Solutions section
+   of the Options dialog box, and updating corewin_express.vsprops file)
+4. libxml2 and iconv packages for Windows from http://gnuwin32.sourceforge.net
+   We use the precompiled packages from http://www.zlatkovic.com/pub/libxml/ and
+   installed them in C:\gnu
+   http://www.zlatkovic.com/pub/libxml/iconv-1.9.2.win32.zip
+   http://www.zlatkovic.com/pub/libxml/libxml2-2.6.30.win32.zip
+
+
+Procedure:
+
+1. Double click on the Visual C++ Solution file vs2005\libtnc\libtnc.sln
+2. Select the libtnc project and edit the project Preferences. If you have
+   changed the installation location for libxml2 and iconv, change Configuration
+   Properties -> C/C++ -> General -> Additional Include Directories
+4. Build->Build Solution
+
+The resulting DLLs and libraries will be in vs2005\libtnc\Release
+
+Hint: you can also build Windows DLLs on Windows by using the Cygwin development
+environment, and following the Unix instructions in the INSTALL file.
+
