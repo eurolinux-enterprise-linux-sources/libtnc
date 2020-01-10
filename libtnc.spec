@@ -1,6 +1,6 @@
 Name:		libtnc
 Version:	1.25
-Release:	4%{?dist}
+Release:	6%{?dist}
 Summary:	Library implementation of the Trusted Network Connect (TNC) specification
 License:	GPLv2
 Group:		System Environment/Libraries
@@ -65,6 +65,12 @@ rm -rf %{buildroot}
 %{_libdir}/libtnc.so
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 1.25-6
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.25-5
+- Mass rebuild 2013-12-27
+
 * Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.25-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
 
